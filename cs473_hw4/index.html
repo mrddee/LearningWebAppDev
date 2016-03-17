@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+
+</head>
+<!-- List items with avatar and action -->
+<style>
+.demo-list-action {
+  width: 300px;
+}
+</style>
+
+<body>
+  <div class="demo-list-action mdl-list">
+  </div>
+
+  <div class="addForm">
+    <form name="submit_form" onsubmit="return addActor()">
+      Name: <input type="text" name="actor_name" required>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.2/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.1.2/material.min.js"></script>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="load_db.js"></script>
+  <script src="actions.js"></script>
+</body>
+</html>
