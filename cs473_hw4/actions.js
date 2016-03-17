@@ -1,21 +1,25 @@
 function addActor() {
-  "use strict";
+    "use strict";
 
-  var newName = document.forms["submit_form"]["actor_name"].value;
+    var newName = document.forms["submit_form"]["actor_name"].value;
 
-  // alternative way to POST
-  //$.post("http://localhost:3000/actors", { id: "" , name: newName, starred: "false"});
+    // alternative way to POST
+    //$.post("http://localhost:3000/actors", { id: "" , name: newName, starred: "false"});
 
-  // ajax method to POST
-  $.ajax({
-          type: "POST",
-          url: "http://localhost:3000/actors",
-          data: { id: "", name: newName, starred: "false" },
-          success: function(){
+    // ajax method to POST
+    $.ajax({
+        type: "POST",
+        url: "http://localhost:3000/actors",
+        data: {
+            id: "",
+            name: newName,
+            starred: "false"
+        },
+        success: function() {
             location.reload();
-          }
-  });
-};
+        }
+    });
+}
 
 // TODO
 // function changeStar() {
