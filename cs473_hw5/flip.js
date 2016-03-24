@@ -28,7 +28,7 @@ result.coin = function flip(headsOrTail) {
         };
         result.wins += 1;
     } else {
-      
+
         response = {
             "result": "loss"
         };
