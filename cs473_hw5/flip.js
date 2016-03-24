@@ -19,14 +19,16 @@ result.coin = function flip(headsOrTail) {
         coin = "tails";
     }
 
+    console.log("Server chose: " + coin);
+
     if (headsOrTail === coin) {
-        console.log("Server: correct guess");
+
         response = {
             "result": "win"
         };
         result.wins += 1;
     } else {
-        console.log("Server: incorrect guess");
+      
         response = {
             "result": "loss"
         };

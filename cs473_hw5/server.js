@@ -1,4 +1,3 @@
-"use strict";
 
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -17,7 +16,7 @@ http.createServer(app).listen(3000);
 
 app.post("/flip", function(req, res) {
 
-    console.log("Server: the client is guessing " + req.body.call);
+    console.log("Client guesses: " + req.body.call);
     var result = flip.coin(req.body.call);
     res.json(result);
 
