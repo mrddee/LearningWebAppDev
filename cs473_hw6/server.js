@@ -10,7 +10,7 @@ var app = express();
 
 app.use(bodyParser.json());
 
-http.createServer(app).listen(8080);
+http.createServer(app).listen(8000);
 
 app.post("/flip", function(req, res) {
     var coin, response, guess = req.body.call;
