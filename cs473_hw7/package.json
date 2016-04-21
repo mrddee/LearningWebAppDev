@@ -1,0 +1,10 @@
+{
+	"name" : "cs473_hw7",
+	"description" : "posting and retrieving links to mongoDB",
+	"version" : "0.0.1",
+	"dependencies" : {
+		"mongoose" : "latest",
+		"express" : "latest",
+		"body-parser" : "latest"
+	}
+}
