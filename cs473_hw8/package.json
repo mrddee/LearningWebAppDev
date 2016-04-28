@@ -1,0 +1,10 @@
+{
+  "name": "cs473_hw8",
+  "version": "0.0.1",
+  "description": "utilizing socket.io to add real-time updates to Amazeriffic",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "mongoose": "^4.4.14",
+    "socket.io": "^1.4.5"
+  }
+}
